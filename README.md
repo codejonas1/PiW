@@ -1,2 +1,2 @@
 # PiW
- Programowania Interfejsów Webowych - ITE PWr
+Jonasz Trocha 263951 WT - P | 13:15 - 15:00
