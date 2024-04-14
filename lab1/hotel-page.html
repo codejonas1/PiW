@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hotel Page</title>
+</head>
+<body>
+    <nav class="fixed-navigation">
+        <img class="logo" src="./Assets/logo.svg"/>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="#">Home</a></li>
+            <li><a class="nav-link" href="#">Find Offers</a></li>
+            <li><a class="nav-link" href="#">Add new Offers</a></li>
+            <li><a class="nav-link" href="#">My offers</a></li>
+            <li><a class="nav-link" href="#">Favorites</a></li>
+            <button class="button primary">Log out</button>
+        </ul>
+        <button class="button primary hidden">Menu</button>
+    </nav>
+
+   <section class="hero-section grid">
+        <article class="hero-title">
+            <p class="title-large hero-title">Serene Retreat</p>
+        </article>
+
+        <article class="hotel-promo">
+            <div class="card-image">
+                <p class="chip">Add to favorites 🤍</p>
+            </div>
+        </article>
+
+        <article class="hotel-description">
+            <div>
+                <ul>
+                    <li><b>Location:</b> Madrid</li>
+                    <li><b>Local category:</b> ★★★★★</li>
+                    <li><b>Price:</b> 70$/per room</li>
+                    <li><b>Description:</b></li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi odit harum, mollitia voluptates aperiam incidunt illo, veniam alias laudantium corrupti maiores! Distinctio consectetur molestias porro vel dolore quam obcaecati nostrum? Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="button primary" id="showDialogBtn">Contact 📧</button>
+
+                <dialog id="dialog">
+                    <form method="dialog">
+                        <div class="close-btn">
+                            <button class="button" id="closeDialogBtn">X</button>
+                        </div>
+                        <p class="title-large">Contact</p>
+                        <p>You're contacting the [hotel name] hotel</p>
+                    
+                        <textarea name="" id="" rows="10"></textarea>
+                        <div class="dialog-footer-buttons">
+                            <button class="button" type="reset">Clear</button>
+                            <button class="button primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                </dialog>
+                  
+            </div>
+            <div class="hotel-images">
+                <div></div>
+                <div></div>
+            </div>
+        </article>
+   </section>
+
+   <script>
+        const favdialog = document.getElementById('dialog');
+        const openDialogBtn = document.getElementById('showDialogBtn')
+        const closeDialogBtn = document.getElementById('closeDialogBtn');
+        
+        openDialogBtn.addEventListener('click', () => favdialog.showModal())
+        closeDialogBtn.addEventListener('click', () => favdialog.close())
+   </script>
+
+</body>
+</html>
