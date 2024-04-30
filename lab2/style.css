@@ -1,0 +1,85 @@
+html, body{
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+
+.lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lists > div{
+    width: 40%;
+    border: 1px solid rgb(168, 168, 168);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lists h1{text-align: center;}
+
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+p{
+    margin-bottom: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.listItem button{
+    outline: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    padding: 0;
+    margin: 0;
+}
+
+.doneTask{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.date{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.addTask{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addTask input {
+    width: 85%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: large;
+    padding: 2px;
+}
+
+.pinkBtn{
+    outline: none;
+    background: none;
+    color: white;
+    border: 2px solid rgb(195, 0, 195);
+    cursor: pointer;
+    font-size: medium;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.pinkBtn:hover{
+    background-color: blueviolet;
+}
